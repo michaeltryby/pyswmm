@@ -517,7 +517,12 @@ class Output(object):
         elif end_exclusive:
             if isinstance(end_index, datetime):
                 tmp_end = self.verify_time(
-                    end_index, self.times, self.start, self.end, self.report, self.period - 1
+                    end_index,
+                    self.times,
+                    self.start,
+                    self.end,
+                    self.report,
+                    self.period - 1,
                 )
                 end_idx = tmp_end - 1
             else:
@@ -529,7 +534,12 @@ class Output(object):
             )
         else:
             end_idx = self.verify_time(
-                end_index, self.times, self.start, self.end, self.report, self.period - 1
+                end_index,
+                self.times,
+                self.start,
+                self.end,
+                self.report,
+                self.period - 1,
             )
 
         values = output.get_subcatch_series(
@@ -599,7 +609,12 @@ class Output(object):
         elif end_exclusive:
             if isinstance(end_index, datetime):
                 tmp_end = self.verify_time(
-                    end_index, self.times, self.start, self.end, self.report, self.period - 1
+                    end_index,
+                    self.times,
+                    self.start,
+                    self.end,
+                    self.report,
+                    self.period - 1,
                 )
                 end_idx = tmp_end - 1
             else:
@@ -611,7 +626,12 @@ class Output(object):
             )
         else:
             end_idx = self.verify_time(
-                end_index, self.times, self.start, self.end, self.report, self.period - 1
+                end_index,
+                self.times,
+                self.start,
+                self.end,
+                self.report,
+                self.period - 1,
             )
 
         values = output.get_node_series(
@@ -680,7 +700,12 @@ class Output(object):
         elif end_exclusive:
             if isinstance(end_index, datetime):
                 tmp_end = self.verify_time(
-                    end_index, self.times, self.start, self.end, self.report, self.period - 1
+                    end_index,
+                    self.times,
+                    self.start,
+                    self.end,
+                    self.report,
+                    self.period - 1,
                 )
                 end_idx = tmp_end - 1
             else:
@@ -692,7 +717,12 @@ class Output(object):
             )
         else:
             end_idx = self.verify_time(
-                end_index, self.times, self.start, self.end, self.report, self.period - 1
+                end_index,
+                self.times,
+                self.start,
+                self.end,
+                self.report,
+                self.period - 1,
             )
 
         values = output.get_link_series(
@@ -758,7 +788,12 @@ class Output(object):
         elif end_exclusive:
             if isinstance(end_index, datetime):
                 tmp_end = self.verify_time(
-                    end_index, self.times, self.start, self.end, self.report, self.period - 1
+                    end_index,
+                    self.times,
+                    self.start,
+                    self.end,
+                    self.report,
+                    self.period - 1,
                 )
                 end_idx = tmp_end - 1
             else:
@@ -770,12 +805,15 @@ class Output(object):
             )
         else:
             end_idx = self.verify_time(
-                end_index, self.times, self.start, self.end, self.report, self.period - 1
+                end_index,
+                self.times,
+                self.start,
+                self.end,
+                self.report,
+                self.period - 1,
             )
 
-        values = output.get_system_series(
-            self.handle, attribute, start_index, end_idx
-        )
+        values = output.get_system_series(self.handle, attribute, start_index, end_idx)
         return {
             time: value
             for time, value in zip(self.times[start_index : end_idx + 1], values)
