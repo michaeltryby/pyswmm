@@ -1,9 +1,5 @@
 # Build dependencies
 #python
-wheel
-pytest
-julian==0.14
-swmm-toolkit
-aenum
-setuptools
+julian>=0.14
+swmm-toolkit<=0.16.0
 packaging
