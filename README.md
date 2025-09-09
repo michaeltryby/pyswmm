@@ -98,13 +98,6 @@ As of version 1.3.1, pyswmm can be installed with specific versions of the SWMM 
 $ pip install pyswmm[swmm5.2.4]
 ```
 
-### SWMM and Python Compatibility Table
-
-| pyswmm version | swmm-toolkit compatibility<br>(SWMM engine)                  | python compatibility |
-| -------------- | ------------------------------------------------------------ | -------------------- |
-| 1.0.0 - 1.1.1  | 0.8.2 (SWMM 5.1.13)                                          | 3.6 - 3.9            |
-| 1.2.0 - 2.1.0  | 0.9.1 - 0.16.0 (SWMM 5.1.14 - 5.2.4)<br>Note: 0.11.0 (SWMM 5.2.0) only supported on windows | 3.7 - 3.12           |
-
 # Usage
 
 A quick example that steps through a simulation:
@@ -147,6 +140,15 @@ with Output('model.out') as out:
     link_ts = LinkSeries(out)['C2'].flow_rate
     sys_ts = SystemSeries(out).rainfall
 ```
+# Sponsors
+
+[![HDLogo](https://drive.google.com/uc?export=view&id=1XaWKhoWxtfY0yLzGcZbfuUM47N5RlAxE)](https://www.hydrodigital.com)
+
+# Contributing
+
+Please check out our Wiki
+<https://github.com/pyswmm/pyswmm/wiki> for more information
+on contributing, including an Author Contribution Checklist.
 
 # Bugs
 
@@ -157,16 +159,10 @@ create a pull request. All changes are welcome, big or small, and we
 will help you make the pull request if you are new to git (just ask on
 the issue).
 
-# Contributing
-
-Please check out our Wiki
-<https://github.com/pyswmm/pyswmm/wiki> for more information
-on contributing, including an Author Contribution Checklist.
-
 # License
 
 Distributed with a BSD2 license; see LICENSE.txt:
 
-    Copyright (C) 2014-2025 PySWMM Developers
+    Copyright (C) 2014-2025 (See Authors)
     Community-Owned See AUTHORS and CITATION.cff
 
