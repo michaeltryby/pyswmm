@@ -140,9 +140,6 @@ with Output('model.out') as out:
     link_ts = LinkSeries(out)['C2'].flow_rate
     sys_ts = SystemSeries(out).rainfall
 ```
-# Sponsors
-
-[![HDLogo](https://drive.google.com/uc?export=view&id=1XaWKhoWxtfY0yLzGcZbfuUM47N5RlAxE)](https://www.hydrodigital.com)
 
 # Contributing
 
