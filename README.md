@@ -12,6 +12,7 @@
 [![Latest PyPI version](https://img.shields.io/pypi/v/pyswmm.svg)](https://pypi.python.org/pypi/pyswmm/)
 [![PyPI Monthly Downloads](https://img.shields.io/badge/dynamic/json.svg?label=Downloads&url=https%3A%2F%2Fpypistats.org%2Fapi%2Fpackages%2Fpyswmm%2Frecent&query=%24.data.last_month&colorB=green&suffix=%20last%20month)](https://pypi.python.org/pypi/pyswmm/)
 [![Cite our Paper](https://joss.theoj.org/papers/10.21105/joss.02292/status.svg)](https://doi.org/10.21105/joss.02292)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Chat-7289da?logo=discord&logoColor=white)](https://discord.com/channels/1412143058463756421/1412143158057242634)
 
 ## Getting started
 
@@ -102,7 +103,7 @@ $ pip install pyswmm[swmm5.2.4]
 | pyswmm version | swmm-toolkit compatibility<br>(SWMM engine)                  | python compatibility |
 | -------------- | ------------------------------------------------------------ | -------------------- |
 | 1.0.0 - 1.1.1  | 0.8.2 (SWMM 5.1.13)                                          | 3.6 - 3.9            |
-| 1.2.0 - 1.5.0  | 0.9.1 - 0.15.0 (SWMM 5.1.14 - 5.2.4)<br>Note: 0.11.0 (SWMM 5.2.0) only supported on windows | 3.7 - 3.12           |
+| 1.2.0 - 2.1.0  | 0.9.1 - 0.16.0 (SWMM 5.1.14 - 5.2.4)<br>Note: 0.11.0 (SWMM 5.2.0) only supported on windows | 3.7 - 3.12           |
 
 # Usage
 
@@ -166,6 +167,6 @@ on contributing, including an Author Contribution Checklist.
 
 Distributed with a BSD2 license; see LICENSE.txt:
 
-    Copyright (C) 2014-2024 PySWMM Developers
+    Copyright (C) 2014-2025 PySWMM Developers
     Community-Owned See AUTHORS and CITATION.cff
 
